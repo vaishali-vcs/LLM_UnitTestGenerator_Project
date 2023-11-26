@@ -268,14 +268,13 @@ def main():
                 status_item.append('Pass')
 
                 save_generated_code(os.path.join(config["BASE_DIRECTORY"], config["OUTPUT_DIRECTORY"]),
-                                    python_methods[task_id]['task_id'], code)
+                                    "test_"+ python_methods[task_id]['task_id'], code)
 
         generation_status.append(status_item)
 
     save_response(os.path.join(config["BASE_DIRECTORY"], config["OUTPUT_DIRECTORY"]),
                   "generation_status.csv", generation_status)
-    # Create the pandas DataFrame
-
+    
 
 if __name__ == "__main__":
     main()

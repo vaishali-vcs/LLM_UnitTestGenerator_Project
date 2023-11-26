@@ -1,3 +1,19 @@
+import glob
+import shutil
+
+
+for file in glob.glob("../GPT4_Data/Output/*.py"):
+
+    srcfilename = file.split('/')[-1]
+    srcfilename.replace(".py","")
+    dst = '../GPT4_Data/renames_outputs/test_' + srcfilename
+    ret = shutil.copy(file, dst)
+
+    print(ret)
+
+print("done")
+
+
 def extract_number(number):
     # Write a Program to extract each digit from an integer in the reverse order.
     print("Given number", number)
@@ -321,6 +337,4 @@ def checkIsoGram(phrase):
                 char_list.append(char)
     return True
 
-s = "education"
-print(checkIsoGram(s))
 

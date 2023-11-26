@@ -1,5 +1,5 @@
 {
-    "OPEN_AI_KEY":"",
+    "OPEN_AI_KEY":"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",
     "BASE_DIRECTORY":"..",
     "OUTPUT_DIRECTORY": "GPT4_Data/Output",
     "INPUT_DIRECTORY": "GPT4_Data/Input",

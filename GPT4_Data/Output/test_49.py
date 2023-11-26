@@ -23,10 +23,6 @@ def checkPangram(s):
     ("THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG", "The string is a pangram\n"),
     ("The quick brown fox jumps over the lazy dog!", "The string is a pangram\n"),
     ("The quick brown fox jumps over the lazy dog. The lazy dog is tired.", "The string is a pangram\n"),
-])
-
-# The function should print "The string is not a pangram" when the input string is not a pangram
-@pytest.mark.parametrize("input_str, expected_output", [
     ("Hello world", "The string is not a pangram\n"),
     ("Python is fun", "The string is not a pangram\n"),
     ("I love programming", "The string is not a pangram\n"),
